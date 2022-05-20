@@ -1,2 +1,5 @@
-# Old-Project
-## 예전 프로그래밍 관련 했던 작업물 + 과제물을 모아놓았습니다.
+# 📌 For Assignment
++ 전공 수업 학습 자료를 모아놓았습니다. **(백업 및 데이터 저장용)**
+   
+### 🔸 List
+- IMP (Immersive Media Programming, 2022-1)
