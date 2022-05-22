@@ -8,6 +8,8 @@ public class Task3_TrashController : MonoBehaviour
 
     [SerializeField]
     private float speed = 0.2f;
+    [SerializeField]
+    private int life = 1;
 
     void Awake()
     {
@@ -17,5 +19,11 @@ public class Task3_TrashController : MonoBehaviour
     void Update()
     {
         this.transform.position = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
+    }
+
+    public int lifeSet()
+    {
+        life--;
+        return life;
     }
 }

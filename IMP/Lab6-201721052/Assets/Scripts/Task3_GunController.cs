@@ -20,9 +20,15 @@ public class Task3_GunController : MonoBehaviour
         if (!GameOver)
         {
             if (args.interactableObject.transform.gameObject.tag == "Trash")
-                Destroy(args.interactableObject.transform.gameObject);
-            GameObject.Find("TrashGroup").GetComponent<Task3_TrashCollider>().objectsDeleted(args.interactableObject.transform.gameObject);
-            GameObject.Find("TrashGroup").GetComponent<Task3_TrashCollider>().ScoreSet();
+            {
+                int tempLife = args.interactableObject.transform.gameObject.GetComponent<Task3_TrashController>().lifeSet();
+                if (tempLife <= 0)
+                {
+                    Destroy(args.interactableObject.transform.gameObject);
+                    GameObject.Find("TrashGroup").GetComponent<Task3_TrashCollider>().objectsDeleted(args.interactableObject.transform.gameObject);
+                    GameObject.Find("TrashGroup").GetComponent<Task3_TrashCollider>().ScoreSet();
+                }
+            }
         }
     }
 

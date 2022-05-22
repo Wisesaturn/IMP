@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.4
+  life: 3
 --- !u!114 &-5609330748261611511
 MonoBehaviour:
   m_ObjectHideFlags: 0
