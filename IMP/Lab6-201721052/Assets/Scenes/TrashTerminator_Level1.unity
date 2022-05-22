@@ -138,7 +138,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: dee1c1d1d02dd2047a17bf51a2f1c6f9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: dee1c1d1d02dd2047a17bf51a2f1c6f9,
         type: 3}
@@ -246,7 +246,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: 5d71462c84f100d459ffebad17fbc52e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: 5d71462c84f100d459ffebad17fbc52e,
         type: 3}
@@ -316,7 +316,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c42d514202731fc41977519d8e5163cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c42d514202731fc41977519d8e5163cc,
         type: 3}
@@ -391,7 +391,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c42d514202731fc41977519d8e5163cc,
         type: 3}
       propertyPath: m_Name
-      value: NinJa_Task2 (1)
+      value: Trash Buddy
       objectReference: {fileID: 0}
     - target: {fileID: 2223639932434330405, guid: c42d514202731fc41977519d8e5163cc,
         type: 3}
@@ -552,7 +552,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: c682b34861fdaf141aef9d1afcb5e542,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: c682b34861fdaf141aef9d1afcb5e542,
         type: 3}
@@ -627,7 +627,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: 3508243cb758b9e44a31b75cb85a42d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: 3508243cb758b9e44a31b75cb85a42d0,
         type: 3}
@@ -781,7 +781,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &858669933
 PrefabInstance:
@@ -798,7 +798,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: b1109360211f5f94fba14ed9564d0800,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: b1109360211f5f94fba14ed9564d0800,
         type: 3}
@@ -873,7 +873,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: e57a4fbbd2542f14ab3856033c2f76ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: e57a4fbbd2542f14ab3856033c2f76ad,
         type: 3}
@@ -1619,7 +1619,7 @@ PrefabInstance:
     - target: {fileID: 2956678890146099040, guid: 42b6169109c7ac74684e575b8665f548,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2956678890146099040, guid: 42b6169109c7ac74684e575b8665f548,
         type: 3}
@@ -1727,7 +1727,7 @@ Transform:
   m_Children:
   - {fileID: 171119134}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1922998575
 MonoBehaviour:
