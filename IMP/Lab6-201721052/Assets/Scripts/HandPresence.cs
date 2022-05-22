@@ -26,13 +26,13 @@ public class HandPresence : MonoBehaviour
 
     private GameObject spawnedHand;
 
-    private Animator handAnimator;  
+    private Animator handAnimator;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        TryInitialize();  
+        TryInitialize();
 
     }
 
@@ -67,24 +67,30 @@ public class HandPresence : MonoBehaviour
 
         }
 
-        // spawn the hand
-        spawnedHand = Instantiate(handModelPrefab, transform);
+        // 2022-05-11 UPDATE: I added this null check because otherwise sometimes the hand was sometimes
+        // instantiated many times. 
+        if (spawnedHand == null)
+        {
+            // spawn the hand
+            spawnedHand = Instantiate(handModelPrefab, transform);
 
-        // get an animator
-        handAnimator = spawnedHand.GetComponent<Animator>();
+            // get an animator
+            handAnimator = spawnedHand.GetComponent<Animator>();
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (!targetDevice.isValid)
+        // 2022-05-11 UPDATE: added "targetDevice == null ||"
+        if (targetDevice == null || !targetDevice.isValid)
         {
             TryInitialize();
         }
         else
         {
-               // TestInputs();
+            // TestInputs();
 
             // set controller / hand active/deactive
             spawnedHand.SetActive(!showController);
@@ -99,14 +105,16 @@ public class HandPresence : MonoBehaviour
 
     }
 
-    private void UpdateHandAnimation( )
+    private void UpdateHandAnimation()
     {
         // trigger pressed
-        if(targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
             handAnimator.SetFloat("Trigger", triggerValue);
-        } else {
-            handAnimator.SetFloat("Trigger",0);
+        }
+        else
+        {
+            handAnimator.SetFloat("Trigger", 0);
         }
 
         // grip pressed
@@ -131,7 +139,7 @@ public class HandPresence : MonoBehaviour
             Debug.Log("Primary pressed: " + pressed);
         }
 
-        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue)) 
+        if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
             Debug.Log("Trigger value: " + triggerValue);
         }
