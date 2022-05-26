@@ -13,26 +13,24 @@ public class Task4_TrashCollider : MonoBehaviour
             objects.Add(obj);
     }
 
-    // public void ScoreSet()
-    // {
-    //     score++;
-    //     Debug.Log("Killed an enemy! Points : " + score);
-    //     Debug.Log("Remaining points : " + objects.Count);
+    public void ScoreSet()
+    {
+        score++;
+        Debug.Log("Killed an enemy! Points : " + score);
+        Debug.Log("Remaining points : " + objects.Count);
 
-    //     // Game End
-    //     if (objects.Count == 0)
-    //     {
-    //         //
-    //         Debug.Log("Victory!");
-    //         Debug.Log("Level 3 Cleared!");
-    //         Time.timeScale = 0;
-    //     }
-    // }
+        // Game End
+        if (objects.Count == 0)
+        {
+            //
+            Debug.Log("Victory!");
+            Debug.Log("Level 3 Cleared!");
+            Time.timeScale = 0;
+        }
+    }
 
-    // public void objectsDeleted(GameObject obj)
-    // {
-    //     objects.Remove(obj);
-    // }
-
-
+    public void objectsDeleted(GameObject obj)
+    {
+        objects.Remove(obj);
+    }
 }

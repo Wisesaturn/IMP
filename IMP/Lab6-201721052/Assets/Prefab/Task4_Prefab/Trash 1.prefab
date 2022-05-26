@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 281302434362615147}
   - component: {fileID: 281302434363713451}
   - component: {fileID: 281302434361425863}
+  - component: {fileID: 6037226493826954529}
   - component: {fileID: 281302434361425862}
   - component: {fileID: -548878178384503854}
-  - component: {fileID: 4135651670320340932}
   m_Layer: 6
   m_Name: Trash 1
   m_TagString: Trash
@@ -105,6 +105,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6037226493826954529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2838393123153895787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3dc754066398545a4fccaee427b517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.5
+  life: 1
 --- !u!136 &281302434361425862
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -137,7 +151,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -197,17 +211,3 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4135651670320340932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2838393123153895787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc846e6c3458d914baca1359f986da7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.25
-  life: 5
