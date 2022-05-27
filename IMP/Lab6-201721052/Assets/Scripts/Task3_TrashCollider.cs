@@ -36,5 +36,8 @@ public class Task3_TrashCollider : MonoBehaviour
         objects.Remove(obj);
     }
 
-
+    public void checkObj(GameObject obj)
+    {
+        objects.Add(obj);
+    }
 }

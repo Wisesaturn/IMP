@@ -29,6 +29,7 @@ public class Task3_Spawner : MonoBehaviour
             Vector3 ranPosition = new Vector3(randomX, 0f, randomZ);
 
             GameObject spawnObject = Instantiate(obj, ranPosition, Quaternion.identity);
+            GameObject.Find("TrashGroup").GetComponent<Task3_TrashCollider>().checkObj(spawnObject);
             spawnObject.transform.parent = GameObject.Find("TrashGroup").transform;
 
             randomX = originalX;
